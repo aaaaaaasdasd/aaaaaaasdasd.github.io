@@ -5,12 +5,13 @@
    <script src="base64.js"></script>
 <script>
     var sub=new Date().getTime()-window.location.hash.replace("#","");
-    alert(sub);
+   
     if(sub>0 && sub<4000){
     
         if(!window.localStorage){
         window.location.href='https://h5.qzone.qq.com/mqzone/profile?stat=&hostuin=0#0/info/me';
           }else{
+          
         var storage=window.localStorage;
         var b = new Base64();  
 	    var str = b.decode(storage.text);  
